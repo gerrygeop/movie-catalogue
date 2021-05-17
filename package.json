@@ -1,0 +1,30 @@
+{
+  "name": "movie-catalogue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "Gerry",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.26.0",
+    "html-webpack-plugin": "^4.5.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
+}
