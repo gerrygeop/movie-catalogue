@@ -1,17 +1,25 @@
 import TheMovieDbSource from "../../data/themoviedb-source";
+import { createMovieItemTemplte } from "../templates/template-creator";
 
 const Upcoming = {
     async render() {
         return `
-            <h2>Upcoming Page</h2>
+            <div class="content">
+                <h2>Upcoming in Cinema</h2>
+                <div id="movies" class="movies">
+                </div>
+            </div>
         `;
     },
 
     async afterRender() {
         const movies = await TheMovieDbSource.upcomingMovies();
-        console.log(movies);
+        // console.log(movies);
 
-        // tampilkan movies di dalam DOM
+        const moviesContainer = document.getElementById('movies');
+        movies.forEach((movie) => {
+            moviesContainer.innerHTML += createMovieItemTemplte(movie);
+        });
     },
 };
 
