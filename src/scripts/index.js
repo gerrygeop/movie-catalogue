@@ -18,5 +18,3 @@ window.addEventListener('load', () => {
     app.renderPage();
     swRegister();
 });
-
-console.log('Hello Geopers!');
