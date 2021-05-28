@@ -50,7 +50,7 @@ body {
 }
 
 .app-bar__brand h1 {
-  color: #7f5af0;
+  color: #db0000;
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
@@ -96,7 +96,6 @@ main {
 }
 
 .content__heading {
-  /* font-weight: normal; */
   color: #094067;
 }
 
@@ -212,8 +211,8 @@ footer p a {
   bottom: 16px;
   right: 16px;
 
-  background-color: #ff5470;
   /* background-color: #db0000; */
+  background-color: #ff5470;
   color: white;
   border: 0;
   border-radius: 50%;
