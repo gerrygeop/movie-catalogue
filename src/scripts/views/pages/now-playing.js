@@ -5,7 +5,7 @@ const NowPlaying = {
     async render() {
         return `
             <div class="content">
-                <h2>Now Playing</h2>
+                <h2 class="content__heading">#Now Playing</h2>
                 <div id="movies" class="movies">
                 </div>
             </div>
