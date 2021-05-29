@@ -6,7 +6,7 @@ const WebSocketInitiator = {
 
     _onMessageHandler(message) {
         console.log(message.data);
-    }
+    },
 };
 
 export default WebSocketInitiator;
